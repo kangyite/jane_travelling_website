@@ -91,15 +91,15 @@ const Community = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-primary-50">
       {/* Header - 7C: Context */}
-      <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white pt-24 pb-12">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <Users className="w-10 h-10" />
             <h1 className="text-4xl font-bold">彳亍社区</h1>
           </div>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <p className="text-xl text-primary-100 max-w-3xl">
             分享你的慢旅行故事，发现更多宁静时刻
           </p>
           
@@ -107,19 +107,19 @@ const Community = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
               <div className="text-3xl font-bold">12.5k</div>
-              <div className="text-blue-100 text-sm">活跃用户</div>
+              <div className="text-primary-100 text-sm">活跃用户</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
               <div className="text-3xl font-bold">45.8k</div>
-              <div className="text-blue-100 text-sm">分享动态</div>
+              <div className="text-primary-100 text-sm">分享动态</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
               <div className="text-3xl font-bold">89.2k</div>
-              <div className="text-blue-100 text-sm">避峰成功</div>
+              <div className="text-primary-100 text-sm">避峰成功</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
               <div className="text-3xl font-bold">156</div>
-              <div className="text-blue-100 text-sm">城市覆盖</div>
+              <div className="text-primary-100 text-sm">城市覆盖</div>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const Community = () => {
                 onClick={() => setActiveTab('hot')}
                 className={`flex-1 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === 'hot'
-                    ? 'bg-blue-500 text-white shadow-lg'
+                    ? 'bg-primary-600 text-white shadow-lg'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -145,7 +145,7 @@ const Community = () => {
                 onClick={() => setActiveTab('following')}
                 className={`flex-1 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === 'following'
-                    ? 'bg-blue-500 text-white shadow-lg'
+                    ? 'bg-primary-600 text-white shadow-lg'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -155,7 +155,7 @@ const Community = () => {
                 onClick={() => setActiveTab('nearby')}
                 className={`flex-1 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === 'nearby'
-                    ? 'bg-blue-500 text-white shadow-lg'
+                    ? 'bg-primary-600 text-white shadow-lg'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -170,18 +170,18 @@ const Community = () => {
                 <input
                   type="text"
                   placeholder="分享你的慢旅行故事..."
-                  className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
-                <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all font-semibold shadow-lg">
+                <button className="px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all font-semibold shadow-lg">
                   发布
                 </button>
               </div>
               <div className="flex gap-4 mt-4 ml-16">
-                <button className="flex items-center gap-2 text-gray-600 hover:text-blue-500 transition">
+                <button className="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition">
                   <Camera className="w-5 h-5" />
                   <span className="text-sm">照片</span>
                 </button>
-                <button className="flex items-center gap-2 text-gray-600 hover:text-blue-500 transition">
+                <button className="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition">
                   <MapPin className="w-5 h-5" />
                   <span className="text-sm">位置</span>
                 </button>
@@ -200,7 +200,7 @@ const Community = () => {
                         <div>
                           <div className="flex items-center gap-2">
                             <h3 className="font-bold text-gray-800">{post.user.name}</h3>
-                            <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-semibold">
+                            <span className="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded-full font-semibold">
                               Lv.{post.user.level}
                             </span>
                             {post.user.badges.map((badge, i) => (
@@ -216,7 +216,7 @@ const Community = () => {
                           </div>
                         </div>
                       </div>
-                      <button className="text-gray-400 hover:text-blue-500">
+                      <button className="text-gray-400 hover:text-primary-600">
                         <Bookmark className="w-5 h-5" />
                       </button>
                     </div>

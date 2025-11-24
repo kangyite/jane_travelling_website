@@ -42,7 +42,7 @@ const CityMap = () => {
         {
           date: '2025-10-20',
           photo: '/chi_chu/images/checkins/waitan2.jpg',
-          mood: '日落时分的外滩，金色的光洒在江面�?,
+          mood: '日落时分的外滩，金色的光洒在江面上',
           tag: '宁静',
           crowdLevel: 35
         }
@@ -50,7 +50,7 @@ const CityMap = () => {
     },
     {
       id: 2,
-      name: '武康�?,
+      name: '武康路',
       lat: 31.2080,
       lng: 121.4410,
       unlocked: true,
@@ -67,7 +67,7 @@ const CityMap = () => {
         {
           date: '2025-09-15',
           photo: '/chi_chu/images/checkins/wukang2.jpg',
-          mood: '法国梧桐树下的建筑，历史感满�?,
+          mood: '法国梧桐树下的建筑，历史感满满',
           tag: '推荐',
           crowdLevel: 15
         }
@@ -75,7 +75,7 @@ const CityMap = () => {
     },
     {
       id: 3,
-      name: '田子�?,
+      name: '田子坊',
       lat: 31.2139,
       lng: 121.4661,
       unlocked: true,
@@ -85,7 +85,7 @@ const CityMap = () => {
         {
           date: '2025-11-08',
           photo: '/chi_chu/images/checkins/tianzifang1.jpg',
-          mood: '文艺气息满满，找到了很多有趣的小�?,
+          mood: '文艺气息满满，找到了很多有趣的小店',
           tag: '推荐',
           crowdLevel: 30
         }
@@ -103,14 +103,14 @@ const CityMap = () => {
         {
           date: '2025-11-05',
           photo: '/chi_chu/images/checkins/yuyuan1.webp',
-          mood: '传统建筑真的很震撑，小笼包也超好�?,
+          mood: '传统建筑真的很震撑，小笼包也超好吃',
           tag: '推荐',
           crowdLevel: 55
         },
         {
           date: '2025-08-20',
           photo: '/chi_chu/images/checkins/yuyuan2.jpg',
-          mood: '中国古典园林的精华，亭台楼阁很精�?,
+          mood: '中国古典园林的精华，亭台楼阁很精致',
           tag: '惊喜',
           crowdLevel: 48
         }
@@ -118,7 +118,7 @@ const CityMap = () => {
     },
     {
       id: 5,
-      name: '朱家角古�?,
+      name: '朱家角古镇',
       lat: 31.1090,
       lng: 121.0520,
       unlocked: true,
@@ -143,7 +143,7 @@ const CityMap = () => {
     },
     {
       id: 6,
-      name: '新天�?,
+      name: '新天地',
       lat: 31.2197,
       lng: 121.4738,
       unlocked: true,
@@ -153,7 +153,7 @@ const CityMap = () => {
         {
           date: '2025-10-25',
           photo: 'https://images.unsplash.com/photo-1574928371328-6ade73695807?w=400',
-          mood: '石库门建筑群，现代与传统的完美结�?,
+          mood: '石库门建筑群，现代与传统的完美结合',
           tag: '推荐',
           crowdLevel: 38
         }
@@ -171,7 +171,7 @@ const CityMap = () => {
         {
           date: '2025-10-15',
           photo: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=400',
-          mood: '从观景台俯瞰上海，视野震�?,
+          mood: '从观景台俯瞰上海，视野震撼',
           tag: '惊喜',
           crowdLevel: 52
         }
@@ -179,7 +179,7 @@ const CityMap = () => {
     },
     {
       id: 8,
-      name: '静安�?,
+      name: '静安寺',
       lat: 31.2273,
       lng: 121.4457,
       unlocked: true,
@@ -189,7 +189,7 @@ const CityMap = () => {
         {
           date: '2025-10-10',
           photo: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=400',
-          mood: '金色的佛像，香火很旺，心情平�?,
+          mood: '金色的佛像，香火很旺，心情平静',
           tag: '宁静',
           crowdLevel: 45
         }
@@ -214,7 +214,7 @@ const CityMap = () => {
         {
           date: '2025-09-08',
           photo: '/chi_chu/images/checkins/nanjinglu2.jpg',
-          mood: '购物天堂，但人真的很�?,
+          mood: '购物天堂，但人真的很多',
           tag: '挤爆',
           crowdLevel: 75
         }
@@ -232,7 +232,7 @@ const CityMap = () => {
         {
           date: '2025-10-18',
           photo: 'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=400',
-          mood: '法式园林风格，早上有很多大爷大妈打太�?,
+          mood: '法式园林风格，早上有很多大爷大妈打太极',
           tag: '宁静',
           crowdLevel: 22
         }
@@ -277,7 +277,7 @@ const CityMap = () => {
     // Locked spots
     {
       id: 13,
-      name: '上海博物�?,
+      name: '上海博物馆',
       lat: 31.2287,
       lng: 121.4741,
       unlocked: false,
@@ -285,14 +285,14 @@ const CityMap = () => {
     },
     {
       id: 14,
-      name: '陆家�?,
+      name: '陆家嘴',
       lat: 31.2416,
       lng: 121.4997,
       unlocked: false
     },
     {
       id: 15,
-      name: '城隉�?,
+      name: '城隉庙',
       lat: 31.2265,
       lng: 121.4920,
       unlocked: false
@@ -303,7 +303,7 @@ const CityMap = () => {
   const moodTags = [
     { id: 'peaceful', label: '宁静', icon: '🌿', color: 'bg-green-100 text-green-700 border-green-300' },
     { id: 'crowded', label: '挤爆', icon: '🔥', color: 'bg-red-100 text-red-700 border-red-300' },
-    { id: 'surprise', label: '惊喜', icon: '�?, color: 'bg-purple-100 text-purple-700 border-purple-300' },
+    { id: 'surprise', label: '惊喜', icon: '✨', color: 'bg-purple-100 text-purple-700 border-purple-300' },
     { id: 'recommend', label: '推荐', icon: '👍', color: 'bg-blue-100 text-blue-700 border-blue-300' }
   ]
 
@@ -354,7 +354,7 @@ const CityMap = () => {
 
   const submitCheckIn = () => {
     // In real app, this would upload to backend
-    alert(`打卡成功！\n景点: ${selectedSpot.name}\n心情: ${checkInForm.mood}\n标签: ${moodTags.find(t => t.id === checkInForm.tag)?.label || '�?}`)
+    alert(`打卡成功！\n景点: ${selectedSpot.name}\n心情: ${checkInForm.mood}\n标签: ${moodTags.find(t => t.id === checkInForm.tag)?.label || '无'}`)
     setShowCheckInModal(false)
     
     // Update spot as unlocked
@@ -400,7 +400,7 @@ const CityMap = () => {
               <div className="flex items-center justify-between text-sm text-gray-600">
                 <span>{city.unlocked}/{city.spots} 点亮</span>
                 {city.unlocked > 0 && (
-                  <span className="text-blue-500 font-semibold">{city.visits} �?/span>
+                  <span className="text-blue-500 font-semibold">{city.visits} 次</span>
                 )}
               </div>
             </button>
@@ -416,7 +416,7 @@ const CityMap = () => {
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-500">{unlockedSpots.length}</div>
-                <div className="text-sm text-gray-600">已点亮景�?/div>
+                <div className="text-sm text-gray-600">已点亮景点</div>
               </div>
             </div>
           </div>
@@ -428,7 +428,7 @@ const CityMap = () => {
               </div>
               <div>
                 <div className="text-3xl font-bold text-green-600">{totalVisits}</div>
-                <div className="text-sm text-gray-600">总访问次�?/div>
+                <div className="text-sm text-gray-600">总访问次数</div>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@ const CityMap = () => {
                 <div className="text-3xl font-bold text-yellow-600">
                   {Math.round((unlockedSpots.length / shanghaiSpots.length) * 100)}%
                 </div>
-                <div className="text-sm text-gray-600">城市探索�?/div>
+                <div className="text-sm text-gray-600">城市探索率</div>
               </div>
             </div>
           </div>
@@ -471,7 +471,7 @@ const CityMap = () => {
                   <MapPin className="w-8 h-8" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-1">📍 你在 {currentLocation.name} 附近�?/h3>
+                  <h3 className="text-2xl font-bold mb-1">📍 你在 {currentLocation.name} 附近！</h3>
                   <p className="text-white/90">点击打卡，点亮这个景点，留下你的足迹</p>
                 </div>
               </div>
@@ -546,7 +546,7 @@ const CityMap = () => {
                               <div className="bg-gray-900 text-white px-3 py-2 rounded-lg text-sm shadow-xl">
                                 <div className="font-bold">{spot.name}</div>
                                 <div className="text-xs">
-                                  {spot.nearby ? '📍 你在附近！点击打�? : '🔒 待解�?}
+                                  {spot.nearby ? '📍 你在附近！点击打卡' : '🔒 待解锁'}
                                 </div>
                               </div>
                             </div>
@@ -581,7 +581,7 @@ const CityMap = () => {
                             {spot.name}
                           </h4>
                           <p className="text-xs text-gray-500">
-                            最近访�?{spot.lastVisit}
+                            最近访问 {spot.lastVisit}
                           </p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -610,7 +610,7 @@ const CityMap = () => {
                 
                 {/* Locked spots */}
                 <div className="pt-4 border-t border-gray-200">
-                  <h4 className="text-sm font-semibold text-gray-600 mb-3">待解锁景�?/h4>
+                  <h4 className="text-sm font-semibold text-gray-600 mb-3">待解锁景点</h4>
                   {shanghaiSpots
                     .filter(s => !s.unlocked)
                     .slice(0, 3)
@@ -648,9 +648,9 @@ const CityMap = () => {
                 <div>
                   <h2 className="text-3xl font-bold mb-2">{selectedSpot.name}</h2>
                   <div className="flex items-center gap-4 text-sm">
-                    <span>访问 {selectedSpot.visited} �?/span>
-                    <span>�?/span>
-                    <span>最�?{selectedSpot.lastVisit}</span>
+                    <span>访问 {selectedSpot.visited} 次</span>
+                    <span>•</span>
+                    <span>最近 {selectedSpot.lastVisit}</span>
                   </div>
                 </div>
                 <button
@@ -703,7 +703,7 @@ const CityMap = () => {
                             </p>
                             <div className="flex items-center gap-2 text-sm text-gray-600">
                               <Users className="w-4 h-4" />
-                              <span>拥挤�?{checkIn.crowdLevel}%</span>
+                              <span>拥挤度 {checkIn.crowdLevel}%</span>
                             </div>
                           </div>
                         </div>
@@ -713,7 +713,7 @@ const CityMap = () => {
                 ) : (
                   <div className="text-center py-12 text-gray-500">
                     <Camera className="w-16 h-16 mx-auto mb-4 text-gray-300" />
-                    <p>还没有打卡记录，点击上方按钮开始记�?/p>
+                    <p>还没有打卡记录，点击上方按钮开始记录</p>
                   </div>
                 )}
               </div>
@@ -792,7 +792,7 @@ const CityMap = () => {
                 {/* Tag Selection */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-3">
-                    🏷�?选择标签
+                    🏷️ 选择标签
                   </label>
                   <div className="grid grid-cols-2 gap-3">
                     {moodTags.map((tag) => (
@@ -831,5 +831,4 @@ const CityMap = () => {
 }
 
 export default CityMap
-
 

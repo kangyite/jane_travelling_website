@@ -38,15 +38,7 @@ const chineseCities = [
     popularSpots: 12,
     avgCrowd: 55
   },
-  { 
-    id: 5, 
-    name: '广州', 
-    nameEn: 'Guangzhou',
-    lat: 23.1291, 
-    lng: 113.2644,
-    popularSpots: 9,
-    avgCrowd: 68
-  },
+
   { 
     id: 6, 
     name: '深圳', 
@@ -82,15 +74,6 @@ const chineseCities = [
     lng: 118.7969,
     popularSpots: 8,
     avgCrowd: 60
-  },
-  { 
-    id: 10, 
-    name: '苏州', 
-    nameEn: 'Suzhou',
-    lat: 31.2989, 
-    lng: 120.5853,
-    popularSpots: 7,
-    avgCrowd: 57
   },
   { 
     id: 11, 

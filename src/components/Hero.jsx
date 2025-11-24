@@ -65,15 +65,15 @@ const Hero = () => {
           
           {/* Enhanced Subtitle */}
           <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            一款懂你的旅行助手，用<span className="font-bold text-blue-600">AI预见人潮</span>�?br />
-            为你圈出此刻可以安心彳亍�?span className="font-bold text-blue-600">宁静之地</span>
+            一款懂你的旅行助手，用<span className="font-bold text-blue-600">AI预见人潮</span>，<br />
+            为你圈出此刻可以安心彳亡的<span className="font-bold text-blue-600">宁静之地</span>
           </p>
           
           {/* Interactive Stats Cards */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
             <div className="bg-white/70 backdrop-blur-lg rounded-2xl p-6 border border-white/60 hover:bg-white/80 transition transform hover:scale-105 shadow-lg">
               <Users className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-              <div className="text-3xl font-bold text-gray-800 mb-1">50�?</div>
+              <div className="text-3xl font-bold text-gray-800 mb-1">50万+</div>
               <div className="text-sm text-gray-600">活跃用户</div>
             </div>
             <div className="bg-white/70 backdrop-blur-lg rounded-2xl p-6 border border-white/60 hover:bg-white/80 transition transform hover:scale-105 shadow-lg">
@@ -89,7 +89,7 @@ const Hero = () => {
             <div className="bg-white/70 backdrop-blur-lg rounded-2xl p-6 border border-white/60 hover:bg-white/80 transition transform hover:scale-105 shadow-lg">
               <Heart className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
               <div className="text-3xl font-bold text-gray-800 mb-1">98%</div>
-              <div className="text-sm text-gray-600">满意�?/div>
+              <div className="text-sm text-gray-600">满意度</div>
             </div>
           </div>
 
@@ -97,25 +97,25 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl mb-12 transform hover:scale-105 transition duration-300">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Sparkles className="w-8 h-8 text-blue-500" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">为什么选择彳亍�?/h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">为什么选择彳亡？</h2>
             </div>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              我们不为"�?而慢，而是�?span className="text-blue-600 font-bold">智能科技</span>�?�?�?舒�?创造空间�?
-              在人潮汹涌的时代，真正的奢侈不是走得慢，而是<span className="text-yellow-600 font-bold">有资格、有条件的走得慢</span>�?
+              我们不为“慢”而慢，而是用<span className="text-blue-600 font-bold">智能科技</span>为“舞适”创造空间。
+              在人潮汹涌的时代，真正的奢侈不是走得慢，而是<span className="text-yellow-600 font-bold">有资格、有条件的走得慢</span>。
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <div className="flex gap-3">
                 <TrendingDown className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-bold text-gray-800 mb-1">避开高峰</div>
-                  <div className="text-sm text-gray-600">AI预测人流，提前规�?/div>
+                  <div className="text-sm text-gray-600">AI预测人流，提前规划</div>
                 </div>
               </div>
               <div className="flex gap-3">
                 <MapPin className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-bold text-gray-800 mb-1">发现秘境</div>
-                  <div className="text-sm text-gray-600">小众景点，独家推�?/div>
+                  <div className="text-sm text-gray-600">小众景点，独家推荐</div>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -146,11 +146,11 @@ const Hero = () => {
             <div className="text-gray-600 text-sm">
               <span className="font-semibold">2024</span> 最佳旅行App
             </div>
-            <div className="text-gray-600 text-sm">�?/div>
+            <div className="text-gray-600 text-sm">•</div>
             <div className="text-gray-600 text-sm">
-              <span className="font-semibold">5�?/span> 用户评价
+              <span className="font-semibold">5星</span> 用户评价
             </div>
-            <div className="text-gray-600 text-sm">�?/div>
+            <div className="text-gray-600 text-sm">•</div>
             <div className="text-gray-600 text-sm">
               <span className="font-semibold">App Store</span> 推荐
             </div>

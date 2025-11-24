@@ -1,0 +1,24 @@
+# Place your check-in photos here
+
+## Naming suggestions:
+- bund-night.jpg
+- bund-sunset.jpg
+- wukang-morning.jpg
+- wukang-architecture.jpg
+- tianzifang.jpg
+- yuyuan-garden.jpg
+- yuyuan-architecture.jpg
+- zhujiajiao-boat.jpg
+- zhujiajiao-morning.jpg
+- xintiandi.jpg
+- oriental-pearl.jpg
+- jingan-temple.jpg
+- nanjing-road-night.jpg
+- nanjing-road-shopping.jpg
+- fuxing-park.jpg
+- century-park.jpg
+- sinan-mansions.jpg
+
+## How to use:
+1. Save your photos in this folder
+2. Update CityMap.jsx to reference them as: '/images/checkins/your-photo-name.jpg'

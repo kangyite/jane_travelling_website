@@ -13,14 +13,14 @@ const TravelDiary = () => {
       date: '2025-11-15',
       location: '外滩',
       city: '上海',
-      photos: ['/jane_travelling_website/images/checkins/waitan1.jpg', '/jane_travelling_website/images/checkins/waitan2.jpg'],
+      photos: ['/chi_chu/images/checkins/waitan1.jpg', '/chi_chu/images/checkins/waitan2.jpg'],
       videos: [],
       originalText: '夜景太美了，黄浦江两岸的灯光让人沉醉',
-      aiSummary: '今天在上海外滩，夜景璀璨迷人，黄浦江两岸灯光交相辉映，让人流连忘返。',
+      aiSummary: '今天在上海外滩，夜景璀璨迷人，黄浦江两岸灯光交相辉映，让人流连忘返�?,
       crowdLevel: 45,
       comfortScore: 8.5,
       emotionTags: ['惊喜', '浪漫', '放松'],
-      weather: '晴',
+      weather: '�?,
       temperature: '18°C',
       timeSpent: '2小时',
       companionType: '独自',
@@ -29,12 +29,12 @@ const TravelDiary = () => {
     {
       id: 2,
       date: '2025-11-10',
-      location: '武康路',
+      location: '武康�?,
       city: '上海',
-      photos: ['/jane_travelling_website/images/checkins/wukang1.jpg'],
+      photos: ['/chi_chu/images/checkins/wukang1.jpg'],
       videos: [],
       originalText: '清晨的武康路，老洋房在晨光中格外美',
-      aiSummary: '今天在上海武康路，清晨漫步在法国梓桐树下，老洋房在晨光中散发着历史的韵味。',
+      aiSummary: '今天在上海武康路，清晨漫步在法国梓桐树下，老洋房在晨光中散发着历史的韵味�?,
       crowdLevel: 12,
       comfortScore: 9.5,
       emotionTags: ['宁静', '文艺', '治愈'],
@@ -47,16 +47,16 @@ const TravelDiary = () => {
     {
       id: 3,
       date: '2025-11-08',
-      location: '田子坊',
+      location: '田子�?,
       city: '上海',
-      photos: ['/jane_travelling_website/images/checkins/tianzifang1.jpg'],
+      photos: ['/chi_chu/images/checkins/tianzifang1.jpg'],
       videos: [],
-      originalText: '文艺气息满满，找到了很多有趣的小店',
-      aiSummary: '今天在上海田子坊，弄堂里藏着许多独特的小店，文艺气息浓厚，每个转角都有惊喜。',
+      originalText: '文艺气息满满，找到了很多有趣的小�?,
+      aiSummary: '今天在上海田子坊，弄堂里藏着许多独特的小店，文艺气息浓厚，每个转角都有惊喜�?,
       crowdLevel: 30,
       comfortScore: 7.8,
       emotionTags: ['推荐', '文艺', '发现'],
-      weather: '晴',
+      weather: '�?,
       temperature: '20°C',
       timeSpent: '3小时',
       companionType: '朋友',
@@ -67,14 +67,14 @@ const TravelDiary = () => {
       date: '2025-11-05',
       location: '豫园',
       city: '上海',
-      photos: ['/jane_travelling_website/images/checkins/yuyuan1.webp', '/jane_travelling_website/images/checkins/yuyuan2.jpg'],
+      photos: ['/chi_chu/images/checkins/yuyuan1.webp', '/chi_chu/images/checkins/yuyuan2.jpg'],
       videos: [],
-      originalText: '传统建筑真的很震撑，小笼包也超好吃',
-      aiSummary: '今天在上海豫园，古典园林建筑令人震撑，品尝了地道的南翔小笼包，美景美食两不误。',
+      originalText: '传统建筑真的很震撑，小笼包也超好�?,
+      aiSummary: '今天在上海豫园，古典园林建筑令人震撑，品尝了地道的南翔小笼包，美景美食两不误�?,
       crowdLevel: 55,
       comfortScore: 6.5,
       emotionTags: ['推荐', '美食', '文化'],
-      weather: '晴',
+      weather: '�?,
       temperature: '22°C',
       timeSpent: '4小时',
       companionType: '家人',
@@ -83,12 +83,12 @@ const TravelDiary = () => {
     {
       id: 5,
       date: '2025-10-28',
-      location: '朱家角',
+      location: '朱家�?,
       city: '上海',
-      photos: ['/jane_travelling_website/images/checkins/zhujiajiao1.jpg', '/jane_travelling_website/images/checkins/zhujiajiao2.jpg'],
+      photos: ['/chi_chu/images/checkins/zhujiajiao1.jpg', '/chi_chu/images/checkins/zhujiajiao2.jpg'],
       videos: [],
-      originalText: '小桥流水人家，江南水乡的美好都在这里。',
-      aiSummary: '今天在上海朱家角古镇，小桥流水，白墙黛瓦，江南水乡的诗意尽在其中。',
+      originalText: '小桥流水人家，江南水乡的美好都在这里�?,
+      aiSummary: '今天在上海朱家角古镇，小桥流水，白墙黛瓦，江南水乡的诗意尽在其中�?,
       crowdLevel: 18,
       comfortScore: 9.2,
       emotionTags: ['宁静', '古镇', '诗意'],
@@ -102,7 +102,7 @@ const TravelDiary = () => {
 
   // Group entries by period
   const groupByPeriod = (entries) => {
-    if (filterPeriod === 'all') return { '所有记录': entries }
+    if (filterPeriod === 'all') return { '所有记�?: entries }
     
     const grouped = {}
     entries.forEach(entry => {
@@ -116,9 +116,9 @@ const TravelDiary = () => {
         const year = date.getFullYear()
         const season = Math.floor(month / 3)
         const seasonNames = ['春季', '夏季', '秋季', '冬季']
-        key = `${year}年 ${seasonNames[season]}`
+        key = `${year}�?${seasonNames[season]}`
       } else if (filterPeriod === 'month') {
-        key = `${date.getFullYear()}年 ${date.getMonth() + 1}月`
+        key = `${date.getFullYear()}�?${date.getMonth() + 1}月`
       }
       
       if (!grouped[key]) grouped[key] = []
@@ -158,7 +158,7 @@ const TravelDiary = () => {
             <h1 className="text-5xl font-bold">旅游日记</h1>
           </div>
           <p className="text-xl text-purple-100 max-w-2xl">
-            每一次旅行，都值得被记录。AI 帮你整理成精美的旅行故事。
+            每一次旅行，都值得被记录。AI 帮你整理成精美的旅行故事�?
           </p>
           
           {/* Stats */}
@@ -199,7 +199,7 @@ const TravelDiary = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  时间轴
+                  时间�?
                 </button>
                 <button
                   onClick={() => setViewMode('grid')}
@@ -222,10 +222,10 @@ const TravelDiary = () => {
                 onChange={(e) => setFilterPeriod(e.target.value)}
                 className="px-4 py-2 rounded-xl border-2 border-gray-200 font-semibold text-gray-700 focus:outline-none focus:border-primary-500"
               >
-                <option value="all">所有记录</option>
-                <option value="year">按年分</option>
-                <option value="season">按季分</option>
-                <option value="month">按月分</option>
+                <option value="all">所有记�?/option>
+                <option value="year">按年�?/option>
+                <option value="season">按季�?/option>
+                <option value="month">按月�?/option>
               </select>
             </div>
 
@@ -249,7 +249,7 @@ const TravelDiary = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Calendar className="w-6 h-6 text-primary-600" />
               {period}
-              <span className="text-sm font-normal text-gray-500">({entries.length} 条记录)</span>
+              <span className="text-sm font-normal text-gray-500">({entries.length} 条记�?</span>
             </h2>
 
             {viewMode === 'timeline' ? (
@@ -272,11 +272,11 @@ const TravelDiary = () => {
                           <div className="flex items-center gap-2 text-sm text-gray-600">
                             <Calendar className="w-4 h-4" />
                             <span>{entry.date}</span>
-                            <span>•</span>
+                            <span>�?/span>
                             <span>{entry.timeSpent}</span>
-                            <span>•</span>
+                            <span>�?/span>
                             <span>{entry.companionType}</span>
-                            <span>•</span>
+                            <span>�?/span>
                             <span>{entry.weather} {entry.temperature}</span>
                           </div>
                         </div>
@@ -285,7 +285,7 @@ const TravelDiary = () => {
                             <Heart className="w-4 h-4 fill-current" />
                             <span>舒适度 {entry.comfortScore}</span>
                           </div>
-                          <div className="text-sm text-gray-500">拥挤度 {entry.crowdLevel}%</div>
+                          <div className="text-sm text-gray-500">拥挤�?{entry.crowdLevel}%</div>
                         </div>
                       </div>
 
@@ -427,7 +427,7 @@ const TravelDiary = () => {
                 <div className="bg-gradient-to-r from-purple-50 to-primary-50 rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <Sparkles className="w-5 h-5 text-purple-600" />
-                    <span className="font-semibold text-purple-700">AI 生成的旅行日记</span>
+                    <span className="font-semibold text-purple-700">AI 生成的旅行日�?/span>
                   </div>
                   <p className="text-gray-800 text-xl leading-relaxed mb-4">{selectedEntry.aiSummary}</p>
                   <div className="pt-4 border-t border-purple-200">
@@ -443,7 +443,7 @@ const TravelDiary = () => {
                     <div className="text-3xl font-bold text-primary-600">{selectedEntry.comfortScore}</div>
                   </div>
                   <div className="bg-gray-50 rounded-2xl p-4">
-                    <div className="text-sm text-gray-600 mb-1">拥挤度</div>
+                    <div className="text-sm text-gray-600 mb-1">拥挤�?/div>
                     <div className="text-3xl font-bold text-gray-800">{selectedEntry.crowdLevel}%</div>
                   </div>
                 </div>
@@ -490,4 +490,5 @@ const TravelDiary = () => {
 }
 
 export default TravelDiary
+
 

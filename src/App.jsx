@@ -16,7 +16,7 @@ import TravelDiary from './components/TravelDiary'
 
 function App() {
   return (
-    <Router basename="/jane_travelling_website">
+    <Router basename="/chi_chu">
       <div className="min-h-screen">
         <Navbar />
         <Routes>

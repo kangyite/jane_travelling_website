@@ -65,8 +65,8 @@ const Hero = () => {
           
           {/* Enhanced Subtitle */}
           <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            一款懂你的旅行助手，用<span className="font-bold text-blue-600">AI预见人潮</span>，<br />
-            为你圈出此刻可以安心彳亡的<span className="font-bold text-blue-600">宁静之地</span>
+            一款懂你的旅行助手，用<span className="font-bold text-blue-600">AI预见人潮</span>,<br />
+            为你圈出此刻可以安心彳亍的<span className="font-bold text-blue-600">宁静之地</span>
           </p>
           
           {/* Interactive Stats Cards */}
@@ -97,7 +97,7 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl mb-12 transform hover:scale-105 transition duration-300">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Sparkles className="w-8 h-8 text-blue-500" />
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">为什么选择彳亡？</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">为什么选择彳亍？</h2>
             </div>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               我们不为“慢”而慢，而是用<span className="text-blue-600 font-bold">智能科技</span>为“舞适”创造空间。

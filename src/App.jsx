@@ -13,6 +13,8 @@ import Personalized from './components/Personalized'
 import RoutesPage from './components/Routes'
 import CityMap from './components/CityMap'
 import TravelDiary from './components/TravelDiary'
+import Marketplace from './components/Marketplace'
+import CustomerService from './components/CustomerService'
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/city-map" element={<CityMap />} />
           <Route path="/travel-diary" element={<TravelDiary />} />
+          <Route path="/marketplace" element={<Marketplace />} />
         </Routes>
+        <CustomerService />
       </div>
     </Router>
   )

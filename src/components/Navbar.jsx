@@ -21,6 +21,7 @@ const Navbar = () => {
             <Link to="/china-map" className="text-gray-700 hover:text-blue-500 transition">中国地图</Link>
             <Link to="/city-map" className="text-gray-700 hover:text-blue-500 transition">打卡地图</Link>
             <Link to="/travel-diary" className="text-gray-700 hover:text-blue-500 transition">旅游日记</Link>
+            <Link to="/marketplace" className="text-gray-700 hover:text-blue-500 transition">商城</Link>
             <Link to="/crowd-radar" className="text-gray-700 hover:text-blue-500 transition">人流雷达</Link>
             <Link to="/community" className="text-gray-700 hover:text-blue-500 transition">社区</Link>
             <Link to="/personalized" className="text-gray-700 hover:text-blue-500 transition">个性化</Link>
@@ -47,6 +48,7 @@ const Navbar = () => {
             <Link to="/china-map" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">中国地图</Link>
             <Link to="/city-map" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">打卡地图</Link>
             <Link to="/travel-diary" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">旅游日记</Link>
+            <Link to="/marketplace" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">商城</Link>
             <Link to="/crowd-radar" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">人流雷达</Link>
             <Link to="/community" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">社区</Link>
             <Link to="/personalized" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded">个性化设置</Link>

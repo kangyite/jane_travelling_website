@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Hotel, Ticket, Search, Star, MapPin, Calendar, Users, Filter, ArrowRight, Heart, Shield, TrendingUp, Clock } from 'lucide-react'
+import { Hotel, Ticket, Search, Star, MapPin, Calendar, Users, Filter, ArrowRight, Heart, Shield, TrendingUp, Clock, ShoppingBag, Package } from 'lucide-react'
 
 const Marketplace = () => {
   const [activeTab, setActiveTab] = useState('hotels')
@@ -123,6 +123,98 @@ const Marketplace = () => {
     }
   ]
 
+  const merchandise = [
+    {
+      id: 1,
+      name: '彳亍旅行背包',
+      price: 299,
+      originalPrice: 399,
+      rating: 4.9,
+      sales: 2345,
+      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400',
+      tags: ['防水', '大容量', '轻便'],
+      category: '旅行装备'
+    },
+    {
+      id: 2,
+      name: '复古胶片相机贴纸套装',
+      price: 29,
+      originalPrice: 49,
+      rating: 4.8,
+      sales: 5678,
+      image: 'https://cbu01.alicdn.com/img/ibank/O1CN01fdbdBp251wWaNVUAm_!!2220794387467-0-cib.220x220.jpg',
+      tags: ['50张装', '防水', '复古风'],
+      category: '文创周边'
+    },
+    {
+      id: 3,
+      name: '旅行手账本',
+      price: 68,
+      originalPrice: 98,
+      rating: 4.9,
+      sales: 3421,
+      image: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400',
+      tags: ['精装', '厚页', '便携'],
+      category: '文创周边'
+    },
+    {
+      id: 4,
+      name: '城市徽章盲盒（10个装）',
+      price: 99,
+      originalPrice: 150,
+      rating: 4.7,
+      sales: 4123,
+      image: 'https://pic.chaopx.com/chao_origin_pic/25/02/14/43ac891afeed32b6aa83e7ecc2910805.jpg!/fw/452/quality/90/unsharp/true/compress/true',
+      tags: ['限定款', '收藏级', '金属材质'],
+      category: '文创周边'
+    },
+    {
+      id: 5,
+      name: '彳亍帆布袋',
+      price: 39,
+      originalPrice: 59,
+      rating: 4.6,
+      sales: 6789,
+      image: 'https://storage.googleapis.com/gcs.ligo.design/app/public/pic/00/08/05/39-adea9ee7f1c3a3f2-w600h600.jpg',
+      tags: ['环保', '可折叠', '文艺风'],
+      category: '文创周边'
+    },
+    {
+      id: 6,
+      name: '旅行照片冲印服务',
+      price: 1.5,
+      originalPrice: 3,
+      rating: 5.0,
+      sales: 12345,
+      image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400',
+      tags: ['高清', '当日达', '多种尺寸'],
+      category: '照片服务',
+      unit: '张'
+    },
+    {
+      id: 7,
+      name: '旅行贴纸大礼包',
+      price: 45,
+      originalPrice: 68,
+      rating: 4.8,
+      sales: 3987,
+      image: 'https://img.alicdn.com/imgextra/i1/1586572195/O1CN01XJyNUV1S5MCGIqRCI_!!1586572195.jpg',
+      tags: ['200+款', '防水', '多主题'],
+      category: '文创周边'
+    },
+    {
+      id: 8,
+      name: '拍立得相框套装',
+      price: 88,
+      originalPrice: 128,
+      rating: 4.9,
+      sales: 2567,
+      image: 'https://i5.momoshop.com.tw/1757063384/goodsimg/TP000/7702/0000/354/TP00077020000354_R1.webp',
+      tags: ['20个装', '木质', '可挂墙'],
+      category: '文创周边'
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
       {/* Hero Section */}
@@ -161,6 +253,17 @@ const Marketplace = () => {
             >
               <Ticket size={20} />
               景点门票
+            </button>
+            <button
+              onClick={() => setActiveTab('merchandise')}
+              className={`flex items-center gap-2 px-8 py-3 rounded-full font-semibold transition-all ${
+                activeTab === 'merchandise'
+                  ? 'bg-white text-blue-600 shadow-lg'
+                  : 'bg-blue-700 text-white hover:bg-blue-600'
+              }`}
+            >
+              <ShoppingBag size={20} />
+              旅行周边
             </button>
           </div>
 
@@ -203,7 +306,7 @@ const Marketplace = () => {
                   搜索酒店
                 </button>
               </div>
-            ) : (
+            ) : activeTab === 'tickets' ? (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
@@ -224,6 +327,21 @@ const Marketplace = () => {
                 <button className="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 font-semibold">
                   <Search size={20} />
                   搜索门票
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                  <input
+                    type="text"
+                    placeholder="搜索旅行周边商品"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+                <button className="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 font-semibold">
+                  <Search size={20} />
+                  搜索商品
                 </button>
               </div>
             )}
@@ -259,7 +377,7 @@ const Marketplace = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-2xl font-bold text-gray-800">
-            {activeTab === 'hotels' ? '热门酒店推荐' : '热门景点门票'}
+            {activeTab === 'hotels' ? '热门酒店推荐' : activeTab === 'tickets' ? '热门景点门票' : '精选旅行周边'}
           </h2>
           <button className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
             <Filter size={20} />
@@ -382,6 +500,68 @@ const Marketplace = () => {
                       </button>
                     </div>
                     <p className="text-xs text-gray-500 text-center">将跳转至携程完成购买</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Merchandise Grid */}
+        {activeTab === 'merchandise' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {merchandise.map((item) => (
+              <div key={item.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow group">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  {item.originalPrice > item.price && (
+                    <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full font-semibold text-sm">
+                      {Math.round((1 - item.price / item.originalPrice) * 100)}折
+                    </div>
+                  )}
+                  <div className="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full font-semibold text-xs">
+                    {item.category}
+                  </div>
+                  <button className="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full hover:bg-white transition">
+                    <Heart size={18} className="text-gray-600 hover:text-red-500" />
+                  </button>
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2 line-clamp-1">{item.name}</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-1">
+                      <Star size={14} className="fill-yellow-400 text-yellow-400" />
+                      <span className="font-semibold text-gray-800 text-sm">{item.rating}</span>
+                    </div>
+                    <span className="text-xs text-gray-500">已售{item.sales}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {item.tags.slice(0, 3).map((tag, index) => (
+                      <span key={index} className="px-2 py-0.5 bg-purple-50 text-purple-600 text-xs rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-xl font-bold text-purple-600">¥{item.price}</span>
+                        {item.originalPrice > item.price && (
+                          <span className="text-xs text-gray-400 line-through">¥{item.originalPrice}</span>
+                        )}
+                      </div>
+                      {item.unit && (
+                        <span className="text-xs text-gray-500">/{item.unit}</span>
+                      )}
+                    </div>
+                    <button className="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition flex items-center gap-1 font-medium text-sm">
+                      <ShoppingBag size={16} />
+                      购买
+                    </button>
                   </div>
                 </div>
               </div>

@@ -142,7 +142,7 @@ const Marketplace = () => {
       originalPrice: 49,
       rating: 4.8,
       sales: 5678,
-      image: 'https://cbu01.alicdn.com/img/ibank/O1CN01fdbdBp251wWaNVUAm_!!2220794387467-0-cib.220x220.jpg',
+      image: 'https://img.alicdn.com/imgextra/i4/1880614560/O1CN01Hh8pHY1jYWtDpt9yw_!!1880614560.jpg_q50s50.jpg',
       tags: ['50张装', '防水', '复古风'],
       category: '文创周边'
     },
